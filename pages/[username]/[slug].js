@@ -1,5 +1,6 @@
 import styles from '../../styles/Post.module.css';
 import PostContent from '../../components/PostContent';
+import Metatags from '../../components/Metatags';
 import { UserContext } from '../../lib/context';
 import { firestore, getUserWithUsername, postToJSON } from '../../lib/firebase';
 
@@ -58,6 +59,8 @@ export default function Post(props) {
 
   return (
     <main className={styles.container}>
+      <Metatags title={post.title} description={post.title} />
+      
       <section>
         <PostContent post={post} />
       </section>
