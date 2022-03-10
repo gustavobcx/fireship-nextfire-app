@@ -19,7 +19,7 @@ export default function Navbar() {
         {username && (
           <>
             <li className="push-left">
-              <button onClick={signOut}>Sign Out</button>
+              <button onClick={() => {}}>Sign Out</button>
             </li>
             <li>
               <Link href="/admin">
