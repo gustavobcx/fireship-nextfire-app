@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import toast from 'react-hot-toast';
+
 import Loader from '../components/Loader';
 
 export default function Home() {
@@ -11,6 +13,9 @@ export default function Home() {
       }}>Jeffs Profile</Link>
 
       <Loader show />
+
+      <button onClick={() => toast.success('Hello World!')}>Hello World!</button>
+
     </div>
   )
 }
